@@ -6,16 +6,12 @@
     },
     "configurations": [
         {
-            // "name": "ARM",
             "name": "Linux",
-            // "intelliSenseMode": "gcc-arm",
             "intelliSenseMode": "linux-gcc-arm",
-            // The non-CMAKE defines in the this list only aid Intellesense, and do not influence the compiler.
-            // You must update defines intended for the compiler in the appropriate `CMakeLists.txt` file.
             "defines": [
                 "CMAKE_TOOLCHAIN_FILE=${workspaceFolder}/arm-gcc-toolchain.cmake",
                 "CORE_CM4",
-                "CURRENT_BOARD=2", // Sparrow v1.1
+                "CURRENT_BOARD=3",
                 "STM32WLE5xx"
             ],
             "includePath": [
@@ -30,7 +26,8 @@
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
-            }
+            },
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4

@@ -27,7 +27,7 @@ set(SPARROW_APP_DIR ${CMAKE_CURRENT_LIST_DIR}/sparrow-application)
 
 # Set global compile settings
 add_compile_definitions(
-    CURRENT_BOARD=2  # Sparrow v1.1
+    CURRENT_BOARD=3  #  Wio-E5, 2 for Sparrow v1.1
     STM32WLE5xx
     CORE_CM4
 )
